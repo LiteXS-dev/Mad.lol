@@ -28,7 +28,7 @@ local targetToMouseTracer = true
 local grabCheckEnabled = true
 local koCheckEnabled = true
 local friendCheckEnabled = false
-local strafeEnabled = false
+local strafeEnabled = f-alse
 local strafeMode = "Orbit"
 local strafeSpeed = 5
 local strafeXOffset = 5
@@ -744,7 +744,7 @@ end)
 
 local HBE = Tabs.Main:AddRightGroupbox('HBE')
 
-local size = 10
+local size = 5
 local hitboxColor = Color3.new(0, 1, 1)
 local visualizeHitbox = false
 local hitboxExpanderEnabled = false
@@ -784,8 +784,8 @@ HBE:AddToggle('HitboxExpanderToggle', {
 
 HBE:AddSlider('HitboxSizeSlider', {
     Text = 'Hitbox Size',
-    Default = 10,
-    Min = 10,
+    Default = 5,
+    Min = 5,
     Max = 50,
     Rounding = 0,
     Callback = function(value)
